@@ -203,7 +203,6 @@ const LandingPage = () => {
       <section className="promotions" id="promotions">
         <div className="container">
           <div className="section-header">
-            <span className="section-tag"><Gift size={14} /> Limited-Time Offers</span>
             <h2>Exclusive Promotions</h2>
             <p>Take advantage of these incredible offers before they expire.</p>
           </div>
