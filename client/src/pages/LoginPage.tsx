@@ -109,7 +109,7 @@ const LoginPage = () => {
           ) : (
             <>
               <div className="login-form-header">
-                <h2>Sign In</h2>
+                <h2>Log In</h2>
                 <p>Enter your credentials to access your account</p>
               </div>
 
@@ -179,7 +179,7 @@ const LoginPage = () => {
                   {isLoading ? (
                     <span className="spinner" />
                   ) : (
-                    <>Sign In <ArrowRight size={18} /></>
+                    <>Log In <ArrowRight size={18} /></>
                   )}
                 </button>
               </form>
