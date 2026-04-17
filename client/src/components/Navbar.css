@@ -9,12 +9,13 @@
 }
 
 .navbar-transparent {
-  background: transparent;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(8px);
 }
 
 .navbar-solid {
-  background: var(--color-primary);
-  box-shadow: var(--shadow-md);
+  background: var(--color-white);
+  box-shadow: var(--shadow-sm);
 }
 
 .navbar-inner {
@@ -27,7 +28,7 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  color: var(--color-white);
+  color: var(--color-primary);
   font-size: 1.35rem;
   font-weight: 800;
   letter-spacing: -0.02em;
@@ -44,14 +45,14 @@
 }
 
 .navbar-links a {
-  color: var(--color-gray-300);
+  color: var(--color-gray-600);
   font-size: 0.9rem;
   font-weight: 500;
   transition: color 0.2s ease;
 }
 
 .navbar-links a:hover {
-  color: var(--color-white);
+  color: var(--color-primary);
 }
 
 .navbar-actions {
@@ -67,7 +68,7 @@
 
 .navbar-toggle {
   display: none;
-  color: var(--color-white);
+  color: var(--color-primary);
   padding: 4px;
 }
 
@@ -79,10 +80,11 @@
     left: 0;
     right: 0;
     flex-direction: column;
-    background: var(--color-primary);
+    background: var(--color-white);
     padding: 24px;
     gap: 20px;
-    border-top: 1px solid var(--color-primary-light);
+    border-top: 1px solid var(--color-gray-200);
+    box-shadow: var(--shadow-sm);
   }
 
   .navbar-links.open {
