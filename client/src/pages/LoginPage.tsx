@@ -49,7 +49,7 @@ const LoginPage = () => {
           </Link>
 
           <div className="login-left-hero">
-            <h1>Welcome Back</h1>
+            <h1>Welcome</h1>
             <p>Sign in to access your accounts, manage finances, and stay on top of your financial goals.</p>
           </div>
 

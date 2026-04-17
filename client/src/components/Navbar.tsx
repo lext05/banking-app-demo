@@ -26,7 +26,7 @@ const Navbar = () => {
 
         <div className="navbar-actions">
           <Link to="/login" className="btn btn-primary">
-            Sign In
+            Log In
           </Link>
           <button
             className="navbar-toggle"
