@@ -14,7 +14,7 @@ const Navbar = () => {
       <div className="container navbar-inner">
         <Link to="/" className="navbar-brand">
           <Building2 size={28} strokeWidth={2.5} />
-          <span>Horizon Bank</span>
+          <span>Horizon Bank, a bank of Super Monoculate Bank</span>
         </Link>
 
         <ul className={`navbar-links ${menuOpen ? 'open' : ''}`}>
@@ -26,7 +26,7 @@ const Navbar = () => {
 
         <div className="navbar-actions">
           <Link to="/login" className="btn btn-primary">
-            Log In
+            Sign In
           </Link>
           <button
             className="navbar-toggle"
