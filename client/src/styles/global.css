@@ -1,10 +1,10 @@
 /* ===== CSS Variables & Reset ===== */
 :root {
-  --color-primary: #0F172A;
-  --color-primary-light: #1E293B;
-  --color-accent: #38BDF8;
-  --color-accent-dark: #0EA5E9;
-  --color-accent-glow: rgba(56, 189, 248, 0.15);
+  --color-primary: #FFFFFF;
+  --color-primary-light: #F8FAFC;
+  --color-accent: #EC4899;
+  --color-accent-dark: #DB2777;
+  --color-accent-glow: rgba(236, 72, 153, 0.15);
   --color-success: #22C55E;
   --color-warning: #F59E0B;
   --color-danger: #EF4444;
@@ -45,10 +45,15 @@ html {
 body {
   font-family: var(--font-family);
   color: var(--color-gray-900);
-  background: var(--color-white);
+  background: var(--color-primary-light);
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.app {
+  background: var(--color-primary-light);
+  min-height: 100vh;
 }
 
 a {
@@ -98,24 +103,24 @@ input {
 
 .btn-primary {
   background: var(--color-accent);
-  color: var(--color-primary);
+  color: var(--color-white);
 }
 
 .btn-primary:hover {
   background: var(--color-accent-dark);
   transform: translateY(-1px);
-  box-shadow: 0 4px 12px rgba(56, 189, 248, 0.4);
+  box-shadow: 0 4px 12px rgba(236, 72, 153, 0.35);
 }
 
 .btn-secondary {
-  background: transparent;
-  color: var(--color-white);
-  border: 2px solid rgba(255, 255, 255, 0.3);
+  background: var(--color-white);
+  color: var(--color-gray-900);
+  border: 2px solid var(--color-gray-300);
 }
 
 .btn-secondary:hover {
-  border-color: var(--color-white);
-  background: rgba(255, 255, 255, 0.1);
+  border-color: var(--color-accent);
+  color: var(--color-accent-dark);
 }
 
 .btn-outline {
@@ -126,16 +131,16 @@ input {
 
 .btn-outline:hover {
   background: var(--color-accent);
-  color: var(--color-primary);
+  color: var(--color-white);
 }
 
 .btn-dark {
-  background: var(--color-primary);
+  background: var(--color-gray-900);
   color: var(--color-white);
 }
 
 .btn-dark:hover {
-  background: var(--color-primary-light);
+  background: var(--color-gray-800);
   transform: translateY(-1px);
   box-shadow: var(--shadow-lg);
 }
@@ -178,8 +183,8 @@ input {
 }
 
 @keyframes pulse-glow {
-  0%, 100% { box-shadow: 0 0 20px rgba(56, 189, 248, 0.2); }
-  50% { box-shadow: 0 0 40px rgba(56, 189, 248, 0.4); }
+  0%, 100% { box-shadow: 0 0 20px rgba(236, 72, 153, 0.2); }
+  50% { box-shadow: 0 0 40px rgba(236, 72, 153, 0.4); }
 }
 
 @keyframes slideInLeft {
