@@ -117,12 +117,12 @@ const LandingPage = () => {
           </div>
           <div className="stat-divider" />
           <div className="stat-item">
-            <div className="stat-number">2M+</div>
+            <div className="stat-number">3M+</div>
             <div className="stat-label">Active Users</div>
           </div>
           <div className="stat-divider" />
           <div className="stat-item">
-            <div className="stat-number">99.9%</div>
+            <div className="stat-number">99.999%</div>
             <div className="stat-label">Uptime SLA</div>
           </div>
           <div className="stat-divider" />
